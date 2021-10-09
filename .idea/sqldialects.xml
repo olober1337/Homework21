@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlResolveMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/homework21/dao/ClientDao.java" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;8af1086a-11b4-4346-bd6b-bc1a3426b0c1&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;database&quot;,     &quot;node&quot;:{      &quot;name&quot;:{       &quot;@qname&quot;:&quot;Homework10/11&quot;      }     }    }   }  } }}" />
+    <file url="file://$PROJECT_DIR$/src/main/java/homework21/dao/StatusDao.java" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;8af1086a-11b4-4346-bd6b-bc1a3426b0c1&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;database&quot;,     &quot;node&quot;:{      &quot;name&quot;:{       &quot;@qname&quot;:&quot;Homework10/11&quot;      }     }    }   }  } }}" />
+    <file url="PROJECT" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;8af1086a-11b4-4346-bd6b-bc1a3426b0c1&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;database&quot;,     &quot;node&quot;:{      &quot;name&quot;:{       &quot;@qname&quot;:&quot;Homework10/11&quot;      }     }    }   }  } }}" />
+  </component>
+</project>
