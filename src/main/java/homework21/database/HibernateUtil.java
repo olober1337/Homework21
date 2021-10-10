@@ -1,6 +1,9 @@
 package homework21.database;
 
+import homework21.entity.Account;
 import homework21.entity.Client;
+import homework21.entity.ClientProfile;
+import homework21.entity.Status;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -33,7 +36,10 @@ public class HibernateUtil {
 
                 configuration.setProperties(settings);
 
+                configuration.addAnnotatedClass(Account.class);
+                configuration.addAnnotatedClass(Status.class);
                 configuration.addAnnotatedClass(Client.class);
+                configuration.addAnnotatedClass(ClientProfile.class);
 
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties()).build();

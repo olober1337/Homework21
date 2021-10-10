@@ -2,6 +2,7 @@ package homework21.database;
 
 import homework21.entity.Account;
 import homework21.entity.Client;
+import homework21.entity.ClientProfile;
 import homework21.entity.Status;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -21,6 +22,7 @@ public class HibernatePropertiesUtil {
             configuration.addAnnotatedClass(Account.class);
             configuration.addAnnotatedClass(Client.class);
             configuration.addAnnotatedClass(Status.class);
+            configuration.addAnnotatedClass(ClientProfile.class);
             return configuration
                     .buildSessionFactory(serviceRegistry);
         } catch (Exception e) {

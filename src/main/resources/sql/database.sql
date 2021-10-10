@@ -28,3 +28,11 @@ CREATE TABLE account
     number varchar(20) UNIQUE NOT NULL,
     value numeric NOT NULL
 );
+
+CREATE TABLE client_profile
+(
+    id SERIAL PRIMARY KEY UNIQUE NOT NULL,
+    client_country_of_residence varchar(30) NOT NULL,
+    marriage_status varchar(20) NOT NULL,
+    number_of_kids int NOT NULL
+);
