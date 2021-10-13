@@ -2,10 +2,8 @@ package homework21.entity;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @Entity
@@ -28,10 +26,23 @@ public class Client {
 
     private int age;
 
-    public Client() {
-    }
+    @OneToMany(mappedBy = "clients", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private Set<Account> accounts;
+
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "client_status",
+            joinColumns = {@JoinColumn(name = "client_id")},
+            inverseJoinColumns = {@JoinColumn(name = "status_id")})
+    private Set<Status> statuses;
+
+    @OneToOne(mappedBy = "clients", cascade = CascadeType.ALL)
+    private ClientProfile clientProfile;
 
     public Client(String name) {
         this.name = name;
+    }
+
+    public Client() {
     }
 }

@@ -9,8 +9,8 @@ import java.util.List;
 
 public class ClientDao {
 
-    private static final String FROM_CLIENTS = "FROM clients";
-    private static final String PHONE_REQUEST = "FROM clients where phone = :phone";
+    private static final String FROM_CLIENTS = "FROM Client";
+    private static final String PHONE_REQUEST = "FROM Client where phone = :phone";
     private static final String PHONE = "phone";
 
     public List<Client> findAllCustomers() {
